@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registrarse</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+
+
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    
+    <section class="form_wrap">
+
+        <section class="cantact_info">
+            <section class="info_title">
+            <img src="images/home/slider/logo1.png"  WIDTH=400 HEIGHT=350 ALIGN=left >
+            </section>
+            <section class="info_items">
+
+                <p><span class="fa fa-envelope"></span> info.birdcoin@gmail.com</p>
+                <p><span class="fa fa-mobile"></span> +1(52) 902-8665</p>
+            </section>
+        </section>
+        
+        <form action="../controlador/guardarUsuario.php" class="form_contact" method="POST">
+            
+            <h2>Crear cuenta</h2>
+            <div class="col-lg-6">
+                <input type="text" class="form-control bb-4" name="nombre" id="nombre" placeholder="Nombres" required>
+            </div>
+            <div class="col-lg-6">
+                <input type="text" class="form-control bb-4" name="apellidos" id="apellidos" placeholder="Apellidos" required>
+            </div>
+            <div class="col-lg-6">
+                <input type="text" class="form-control bb-4" name="edad" id="edad" placeholder="Edad">
+            </div>
+            <div class="col-lg-6">
+                <input type="email" class="form-control bb-4" name="email" id="email" placeholder="Correro Electrónico" required>
+            </div>
+            <div class="col-lg-6">
+                <input type="text" class="form-control bb-4" name="estado" id="estado" placeholder="Estado" required>
+            </div>
+            <div class="col-lg-6">
+                <input type="text" class="form-control bb-4" name="ciudad" id="ciudad" placeholder="Ciudad" required>
+            </div>
+            <div class="col-lg-6">
+                <input type="password" class="form-control bb-4" name="contraseña" id="contraseña" placeholder="Contraseña" required>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Registrar</button>
+            </div>
+            <br>
+            
+            
+            
+        </form>
+       
+
+    </section>
+
+</body>
+</html>
